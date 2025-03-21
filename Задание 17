@@ -1,0 +1,25 @@
+
+s = open('17.txt').readlines()
+for i in range(len(s)):
+	s[i]=s[i].strip()
+	s[i]=int(s[i])
+
+	
+mn=10**20
+for i in range(len(s)):
+	if len(str(abs(s[i])))==3:
+		if s[i]%10==3:
+			mn=min(mn,s[i])
+		
+	
+k=0
+mns=10**20
+for i in range(len(s)-1):
+	if (len(str(abs(s[i])))==4 and len(str(abs(s[i+1])))!=4) or (len(str(abs(s[i])))!=4 and len(str(abs(s[i+1])))==4):
+		sm=s[i]**2+s[i+1]**2
+		if sm%mn==0:
+			k+=1
+			mns=min(mns,sm)
+print(k,mns)
+		
+# Ответ: 13 13648930
