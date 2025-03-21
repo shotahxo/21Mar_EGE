@@ -1,0 +1,53 @@
+#19
+def f(a,b,p):
+	if p==3 and a+b>=81:
+		return True
+	if p==2 and a+b>=81:
+		return False
+	if p==3 and a+b<81:
+		return False
+	if p%2==1:
+		return f(a+1,b,p+1) or f(a,b+1,p+1) or f(a+b,b,p+1) or f(a,b+a,p+1)
+	if p%2==0:
+		return f(a+1,b,p+1) or f(a,b+1,p+1) or f(a+b,b,p+1) or f(a,b+a,p+1)
+	
+for s in range(1,74):
+	if f(7,s,1)==True:
+		print(s)
+# Ответ: 23
+
+#20
+def f(a,b,p):
+	if p==4 and a+b>=81:
+		return True
+	if p==3 and a+b>=81:
+		return False
+	if p==4 and a+b<81:
+		return False
+	if p%2==1:
+		return f(a+1,b,p+1) or f(a,b+1,p+1) or f(a+b,b,p+1) or f(a,b+a,p+1)
+	if p%2==0:
+		return f(a+1,b,p+1) and f(a,b+1,p+1) and f(a+b,b,p+1) and f(a,b+a,p+1)
+	
+for s in range(1,74):
+	if f(7,s,1)==True:
+		print(s)
+# Ответ: 22 36
+
+#21
+def f(a,b,p):
+	if (p==3 or p==5) and a+b>=81:
+		return True
+	if (p==2 or p==4) and a+b>=81:
+		return False
+	if p==5 and a+b<81:
+		return False
+	if p%2==1:
+		return f(a+1,b,p+1) and f(a,b+1,p+1) and f(a+b,b,p+1) and f(a,b+a,p+1)
+	if p%2==0:
+		return f(a+1,b,p+1) or f(a,b+1,p+1) or f(a+b,b,p+1) or f(a,b+a,p+1)
+	
+for s in range(1,74):
+	if f(7,s,1)==True:
+		print(s)
+# Ответ: 35
