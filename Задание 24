@@ -1,0 +1,13 @@
+from re import findall
+
+s = open('24.txt').readline()
+c = findall(r'[A][^AB]+[B]',s)
+
+k=0
+for x in c:
+	if len(c)>=20:
+		k+=1
+print(k)
+	
+
+# Ответ: 504
