@@ -1,0 +1,11 @@
+from itertools import product
+
+p=product('АОУ',repeat=5)
+k=0
+for x in p:
+	x=''.join(x)
+	k+=1
+	if k==240:
+		print(x)
+	
+# Ответ: УУУОУ
