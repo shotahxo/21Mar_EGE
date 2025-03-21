@@ -1,0 +1,13 @@
+from math import *
+N1=18
+N2=10
+i1=ceil(log2(N1))
+i2=ceil(log2(N2))
+
+Io=ceil((i1*2+i2*6)/8)
+
+n=500
+I=n*Io
+print(I)
+
+# Ответ:2500
