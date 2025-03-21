@@ -1,0 +1,16 @@
+def fd(n):
+	k=0
+	mx=-10**20
+	for d in range(2,int(n**0.5)+1):
+		if n%d==0:
+			if d%2!=0:
+				k+=1
+				mx=max(mx,d)
+	return (k,mx)
+
+for n in range(63000000,75000001):
+	a=fd(n)
+	if a[0]==5:
+		print(a)
+
+# Ответ: 63123848 7890481, 66724352 130321, 71639296 279841
