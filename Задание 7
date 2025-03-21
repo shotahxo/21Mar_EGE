@@ -1,0 +1,18 @@
+from math import*
+
+a=200
+N=256
+i=ceil(log2(N))
+
+I=6
+	
+a2=300
+i2=16
+
+Kr=a2**2/a**2
+ir=i2/i
+
+I2=I*ir*Kr
+print(I2)
+
+# Ответ: 27
