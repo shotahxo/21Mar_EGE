@@ -56,3 +56,4 @@ for i in range(len(k2)):
 Px = abs(((x1+x2)/2)*10000)
 Py = abs(((y1+y2)/2)*10000)
 print(Px,Py)
+#Ответ: 751  -9101
