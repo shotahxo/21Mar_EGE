@@ -6,7 +6,7 @@
 # №3
 ![image](https://github.com/user-attachments/assets/87f0c5bb-3e1d-4142-aa1f-01f760f1df88)
 # №4
-
+![image](https://github.com/user-attachments/assets/55ad4be4-2052-437c-9cf6-f1dfbdbf616d)
 # №7
 
 # №9
